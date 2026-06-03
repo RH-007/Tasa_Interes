@@ -1,0 +1,46 @@
+
+proyecto_tasas/
+├── data/
+│   ├── raw/
+│   └── tasas.db
+├── src/
+│   ├── extract.py
+│   ├── transform.py
+│   ├── load.py
+│   ├── report.py
+│   └── main.py
+└── README.md
+
+
+Excel descargado
+      ↓
+leer archivo más reciente
+      ↓
+limpiar y filtrar tasas hipotecarias
+      ↓
+guardar en SQLite
+      ↓
+consultar ranking
+      ↓
+mandar resumen al celular
+
+
+
+
+9.Tasas_Interes/
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   ├── base/
+│   │   └── tasas.db
+│   └── output/
+├── notebooks/
+│   ├── tasa_interes_hoy.ipynb
+│   └── tasa_interes_bd.ipynb
+├── src/
+│   ├── extract.py
+│   ├── transform.py
+│   ├── load.py
+│   ├── report.py
+│   └── main.py
+└── README.md
