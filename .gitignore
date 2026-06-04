@@ -1,0 +1,17 @@
+# Entornos y secretos
+.env
+src/.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Notebooks borrador
+src/notebooks/
+
+# Datos generados
+data/raw/
+data/processed/
+data/base/
+*.db
+*.xlsx
