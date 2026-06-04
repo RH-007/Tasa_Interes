@@ -8,7 +8,7 @@ import sqlite3
 
 ## Ruta de archivo
 path_processed = Path(r"C:\Users\PC\Desktop\Proyectos\Proyectos_Py\9.Tasas_Interes\data\processed")
-path_bd = Path(r"C:\Users\PC\Desktop\Proyectos\Proyectos_Py\9.Tasas_Interes\data\tasa_interes.db")
+path_bd = Path(r"C:\Users\PC\Desktop\Proyectos\Proyectos_Py\9.Tasas_Interes\data\base\tasa_interes.db")
 
 data_tasas = pd.read_excel(path_processed / "tasa_interes_final.xlsx")
 

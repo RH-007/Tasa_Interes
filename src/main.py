@@ -9,4 +9,9 @@ import transform
 print("\nPaso 3: Carga")
 import load
 
+
+print("\nPaso 4: Reporte")
+import report
+
+
 print("\nPipeline terminado correctamente.")
