@@ -86,6 +86,7 @@ data_tasas_final_df = pd.concat(data_tasas_final, ignore_index=True, axis = 0)
 data_tasas_final_df["Tipo_Tasa"] = (data_tasas_final_df["Tasa Anual (%)"].str.strip())
 data_tasas_final_df["Fecha_Norm"] = pd.to_datetime(data_tasas_final_df["Fecha"], format="%d_%m_%Y")
 data_tasas_final_df["tasa_interes"] = pd.to_numeric(data_tasas_final_df["tasa_interes"], errors="coerce")
+data_tasas_final_df["Bancos"] = 
 
 ## filtrado de tipo de datp
 tasas_interes = [

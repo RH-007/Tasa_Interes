@@ -1,4 +1,11 @@
 
+cd "C:\Users\PC\Desktop\Proyectos\Proyectos_Py\9.Tasas_Interes"
+git status
+git add .
+git commit -m "Mejora pipeline de tasas"
+git push
+
+s
 proyecto_tasas/
 ├── data/
 │   ├── raw/
