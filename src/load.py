@@ -56,7 +56,7 @@ LIMIT 10
 fecha_max = pd.read_sql_query(query_fecha, conn)
 tasa_hoy = pd.read_sql_query(query, conn)
 
-print("Tasa de Interés para Préstamos Hipotecarios para Vivienda al día de hoy:")
+print("Tasa de Interes para Prestamos Hipotecarios para Vivienda al día de hoy:")
 print(fecha_max)
 print("\n")
 print(tasa_hoy)
@@ -66,5 +66,5 @@ tasa_result = {}
 for i, row in tasa_hoy.iterrows():
     tasa_result[row['Bancos']] = row['tasa_interes']
     
-print("\nTasa de Interés para Préstamos Hipotecarios para Vivienda al día de hoy:")
+print("\nTasa de Interes para Prestamos Hipotecarios para Vivienda al día de hoy:")
 print(tasa_result)
