@@ -19,14 +19,11 @@ import os
 
 print("Iniciando proceso de extracción de tasas de interés...")
 
-## Website de consulta
-web = "https://www.sbs.gob.pe/app/pp/EstadisticasSAEEPortal/Paginas/TIActivaTipoCreditoEmpresa.aspx?tip=B"
-
 path_raw = Path(r"C:\Users\PC\Desktop\Proyectos\Proyectos_Py\9.Tasas_Interes\data\raw")
 
 ## rango de fechas
 fecha_inicio = "2026-01-05"
-fecha_fin = dt.date.today()
+fecha_fin = dt.date.today() ##- dt.timedelta(days=1)  # fecha de ayer
 
 fechas = pd.date_range(
     start=fecha_inicio,
@@ -134,7 +131,7 @@ else:
     ## Configuracion del driver
     chrome_options = Options()
     chrome_options.add_experimental_option("prefs", {
-        "download.default_directory": path_raw,
+        "download.default_directory": str(path_raw),
         "download.prompt_for_download": False,
         "download.directory_upgrade": True,
         "safebrowsing.enabled": True
@@ -143,10 +140,10 @@ else:
     driver = webdriver.Chrome(options=chrome_options)
     wait = WebDriverWait(driver, 20)
 
-    url = "https://www.sbs.gob.pe/app/pp/EstadisticasSAEEPortal/Paginas/TIActivaTipoCreditoEmpresa.aspx?tip=B"
+    url = 'https://www.sbs.gob.pe/app/pp/EstadisticasSAEEPortal/Paginas/TIActivaTipoCreditoEmpresa.aspx?tip=B'
 
 
-    driver.get(web)
+    driver.get(url)
 
     descarga_ok = consulta_tasa_interes(driver, fecha)
 

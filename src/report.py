@@ -47,7 +47,7 @@ def crear_mensaje_reporte():
     mensaje = f"Tasas hipotecarias mas bajas - {fecha}\n\n"
 
     for i, row in data.iterrows():
-        mensaje += f"{i + 1}. {row['Bancos']}: {row['tasa_interes']}%\n"
+        mensaje += f"{i}. {row['Bancos']}: {row['tasa_interes']}%\n"
 
     return mensaje
 

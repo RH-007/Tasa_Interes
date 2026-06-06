@@ -1,4 +1,4 @@
-print("Iniciando pipeline de tasas de interes...")
+print("\nIniciando pipeline de tasas de interes...")
 
 print("\nPaso 1: Extraccion")
 import extract
